@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy · Crimson Wolf LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,600;112,800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root {
+  --bg: #F7F4F4; --fg: #1F1A1B; --muted: #655B5D; --line: #E4DADB; --crimson: #9E1B2F;
+  --font-display: "Archivo", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #151113; --fg: #EEE7E8; --muted: #A99C9F; --line: #2F2729; --crimson: #E25A6E; color-scheme: dark; }
+}
+:root[data-theme="dark"] { --bg: #151113; --fg: #EEE7E8; --muted: #A99C9F; --line: #2F2729; --crimson: #E25A6E; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 400 1rem/1.65 var(--font-body); padding-inline: clamp(16px, 5vw, 48px); }
+.wrap { max-width: 44rem; margin-inline: auto; }
+a { color: var(--crimson); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--crimson); outline-offset: 3px; border-radius: 2px; }
+header.site { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding-block: 1.5rem; border-bottom: 1px solid var(--line); }
+.brand { display: flex; align-items: center; gap: .6rem; color: var(--fg); text-decoration: none; }
+.brand svg { width: 30px; height: 30px; color: var(--crimson); flex: none; }
+.brand span { font: 800 1rem/1 var(--font-display); font-stretch: 112%; letter-spacing: .02em; text-transform: uppercase; }
+.back { color: var(--muted); text-decoration: none; font-weight: 500; font-size: .95rem; }
+main { padding-block: clamp(2.5rem, 6vw, 4rem); display: flex; flex-direction: column; gap: 1rem; }
+.eyebrow { font: 500 .78rem/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--crimson); margin: 0; }
+h1 { font: 800 clamp(2rem, 6vw, 3rem)/1.05 var(--font-display); font-stretch: 112%; margin: 0; text-wrap: balance; }
+h2 { font: 800 1.2rem/1.25 var(--font-display); font-stretch: 112%; margin: 1.5rem 0 0; text-wrap: balance; }
+p, ul { margin: 0; }
+ul { padding-left: 1.2rem; display: flex; flex-direction: column; gap: .4rem; }
+.muted { color: var(--muted); }
+footer.site { padding-block: 2rem 3rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <a class="brand" href="index.html" aria-label="Crimson Wolf LLC home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="currentColor" d="M10 6 L24 20 H40 L54 6 L56 30 L46 44 L36 58 H28 L18 44 L8 30 Z M22 32 L28 36 L22 37 Z M42 32 L36 36 L42 37 Z M29 48 H35 L32 52 Z" fill-rule="evenodd"/></svg>
+      <span>Crimson Wolf</span>
+    </a>
+    <a class="back" href="index.html">Back to home</a>
+  </header>
+
+  <main>
+    <p class="eyebrow">Effective October 11, 2026</p>
+    <h1>Privacy policy</h1>
+    <p class="muted">This policy covers the crimsonwolf.llc website, run by Crimson Wolf LLC, a Pennsylvania limited liability company.</p>
+
+    <h2>What this website collects</h2>
+    <p>This website doesn't use cookies, analytics or advertising trackers, and it has no forms or accounts. We don't collect personal information through it.</p>
+    <p>Like any website, our web host may keep standard server logs, such as IP address, browser type and the pages requested, to keep the site secure and running.</p>
+
+    <h2>When you email us</h2>
+    <p>If you email us, we use your email address and message only to reply to you. We keep that correspondence only as long as we need it to help you, and we never sell or share it.</p>
+
+    <h2>Our apps</h2>
+    <p>Our apps will each have their own privacy policy, published on this website before the app is released. It will explain what the app collects, how it's used, and how to delete your data.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If we change this policy, we'll update the date at the top of this page.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about privacy: <a href="mailto:contact@crimsonwolf.llc">contact@crimsonwolf.llc</a></p>
+  </main>
+
+  <footer class="site">© 2026 Crimson Wolf LLC · Pennsylvania, USA</footer>
+</div>
+</body>
+</html>
