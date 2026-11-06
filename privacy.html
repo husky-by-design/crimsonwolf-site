@@ -51,7 +51,7 @@ footer.site p { margin: 0 0 .5rem; }
   </header>
 
   <main>
-    <p class="eyebrow">Effective October 27, 2026</p>
+    <p class="eyebrow">Effective November 6, 2026</p>
     <h1>Privacy policy</h1>
     <p class="muted">This policy covers the crimsonwolf.llc website and the PackTutor™ app for iPhone, both run by Crimson Wolf LLC, a Pennsylvania limited liability company.</p>
 
@@ -60,7 +60,8 @@ footer.site p { margin: 0 0 .5rem; }
       <li>No ads, and we never sell your data.</li>
       <li>We don't track you across other companies' apps or websites.</li>
       <li>Your camera stays on your phone. Nothing is uploaded unless you choose to send a scan report.</li>
-      <li>You can delete your account and everything stored with it from inside the app.</li>
+      <li>AI features send your cards and decks to a third-party AI service only after you agree on a consent screen.</li>
+      <li>You can delete your account from inside the app (Profile → Delete account), and that removes everything stored with it.</li>
     </ul>
 
     <h2>What this website collects</h2>
@@ -71,25 +72,64 @@ footer.site p { margin: 0 0 .5rem; }
     <p>If you email us, we use your email address and message only to reply to you. We keep that correspondence only as long as we need it to help you, and we never sell or share it.</p>
 
     <h2>The PackTutor app</h2>
-    <p>PackTutor is a collection app for Magic: The Gathering cards. Here's what it collects and why.</p>
+    <p>PackTutor is a collection app for Magic: The Gathering cards. Here's what it collects and why. Scanning, card details and prices work without an account.</p>
 
     <h2>Your account</h2>
     <p>To create an account, you sign in with Apple or with an email address and a passphrase. We store your email address. If you use Sign in with Apple and choose to hide your email, we only get an Apple private relay address, not your real one. Passphrases are handled by our sign-in provider and stored only in hashed form; we can't read them.</p>
 
-    <h2>Your library</h2>
-    <p>The cards in your library, with their quantities and conditions, are stored with our database provider, <a href="https://supabase.com">Supabase</a>, on servers in the United States (US East). That's what lets your library follow your account to a new phone. Only you can see your library.</p>
+    <h2>Your profile</h2>
+    <p>You can choose a display name and an avatar. Both are optional. They're stored with Supabase, and the other player sees them when you trade.</p>
+
+    <h2>Your collection, decks and progress</h2>
+    <p>When you're signed in, the following sync with our database provider, <a href="https://supabase.com">Supabase</a>, on servers in the United States (US East), so they're on all your devices. Only you can see them.</p>
+    <ul>
+      <li>Your collection: cards, quantities, condition, finish, pinned cards, and how each card was added (for example, scanned, or imported along with the name of the app it came from).</li>
+      <li>Your decks: their cards, format, deck box style, and your deck notes (your game journal).</li>
+      <li>Your want list.</li>
+      <li>Your rewards progress, such as achievements and set milestones.</li>
+    </ul>
+
+    <h2>Imported files</h2>
+    <p>When you import a CSV file or a deck list from another app, the file is read on your phone. Only the cards that end up in your collection sync. Imported deck lists stay on your phone.</p>
+
+    <h2>Trades</h2>
+    <p>When you trade cards with another player, we store the two accounts, the cards each of you offers, and your confirmations with Supabase. Only the two of you can see a trade. The other player sees only your display name, your avatar and the cards in the trade, not the rest of your collection or your email.</p>
+    <p>Trade codes work for 24 hours. To stop codes being guessed, if you type a code that matches no trade, we log that attempt against your account and keep it for 7 days.</p>
 
     <h2>Camera and scanning</h2>
     <p>When you scan a card, the camera frames are processed on your phone to read the card. Camera frames and photos are never uploaded, unless you choose to send a scan report.</p>
 
     <h2>Scan reports</h2>
     <p>If the scanner gets a card wrong, you can choose to send us a scan report. A report includes a photo of the card, the text the scanner recognized, any note you add, the app version and your iPhone model. Reports are stored privately with Supabase, are seen only by us, and are used only to improve scanning. We never send a report without you choosing to.</p>
+    <p>When a new report comes in, it's emailed to our team through <a href="https://resend.com">Resend</a>, an email delivery service, with your display name and account email so we can reply. We may also get a short notification on our phones through <a href="https://ntfy.sh">ntfy.sh</a> that contains only the card name and printing: no notes, emails or account details.</p>
+
+    <h2>Feedback</h2>
+    <p>When you're signed in, Profile → Send feedback sends us your message, a screenshot if you pick one, the app version, your iOS version and your iPhone model. Feedback is stored privately with Supabase and emailed to our team through Resend, with your account email as the reply address so we can answer you. You can send a few messages an hour.</p>
+    <p>When you're signed out, Send feedback opens your own mail app instead, and the email works like any other email to us.</p>
+
+    <h2>AI features</h2>
+    <p>PackTutor Pro includes AI deck building, deck tune-ups and card explanations. They're also available to beta testers. Before your first AI request, the app shows a consent screen. If you don't agree, nothing is sent and the rest of the app works as before.</p>
+    <p>When you use a cloud AI feature, the app sends the following through our server to a third-party AI service, which uses it to produce the answer:</p>
+    <ul>
+      <li>The cards you own that are legal for the deck (card names and details).</li>
+      <li>The deck being tuned, with its name and description.</li>
+      <li>Your deck notes, when you ask for a tune-up or a summary.</li>
+    </ul>
+    <p>We keep a count of AI requests for each account to enforce monthly limits. We don't keep the content of your requests.</p>
+    <p>On iPhones with Apple Intelligence, some small AI features, like explaining a card, run on your phone with Apple's on-device model. Nothing leaves your phone for those.</p>
+    <p>AI can make mistakes, so check its suggestions.</p>
 
     <h2>Card images and prices</h2>
-    <p>Card details, images and prices load from <a href="https://scryfall.com">Scryfall</a>. When the app loads them, Scryfall receives the request from your phone, including your IP address, as any website would. We don't send Scryfall your account or library.</p>
+    <p>Card details, images and prices load from <a href="https://scryfall.com">Scryfall</a>. When the app loads them, Scryfall receives the request from your phone, including your IP address, as any website would. We don't send Scryfall your account or collection.</p>
 
-    <h2>AI features (when they launch)</h2>
-    <p>AI deck building and tune-ups aren't available yet. When they launch, your library and your deck notes will be sent to a third-party AI provider to build or tune a deck, and only after you agree on a consent screen in the app that names the provider. If you don't agree, nothing is sent and the rest of the app works as before. We'll update this policy, including the provider's name, before these features go live.</p>
+    <h2>Other services your phone contacts</h2>
+    <ul>
+      <li>Card data and daily price updates download from our storage at Supabase.</li>
+      <li>News headlines load from our server. Opening a headline opens the publisher's own website.</li>
+      <li>"Read the full rules" loads Wizards of the Coast's rules PDF from their website. We don't save the PDF.</li>
+      <li>Buy links open TCGplayer or Cardmarket.</li>
+    </ul>
+    <p>Each of these sees your phone's IP address, as any website would, but not your account or your collection.</p>
 
     <h2>Purchases</h2>
     <p>Any purchases are handled by Apple. We don't receive your payment details; Apple tells us only whether you have an active purchase.</p>
@@ -106,14 +146,19 @@ footer.site p { margin: 0 0 .5rem; }
 
     <h2>Who handles your data</h2>
     <ul>
-      <li><strong>Supabase</strong>: sign-in, your library and scan reports (United States).</li>
-      <li><strong>Apple</strong>: Sign in with Apple, purchases, and TestFlight crash reports.</li>
+      <li><strong>Supabase</strong>: sign-in, your synced data, trades, scan reports and feedback (United States).</li>
+      <li><strong>Apple</strong>: Sign in with Apple, purchases, TestFlight, and on-device AI.</li>
       <li><strong>Scryfall</strong>: card details, images and prices.</li>
-      <li><strong>An AI provider</strong>, named in the app: only once AI features launch, and only with your consent.</li>
+      <li><strong>A third-party AI service</strong>: only for cloud AI features, and only after you agree.</li>
+      <li><strong>Resend</strong>: emails of scan reports and feedback to our team.</li>
+      <li><strong>ntfy.sh</strong>: short notifications to our team, with no personal details.</li>
+      <li><strong>Wizards of the Coast</strong>: only when you open the rules PDF.</li>
     </ul>
 
     <h2>Keeping and deleting your data</h2>
-    <p>We keep your account, library and scan reports until you delete them. You can delete your account at any time from inside the app; that removes your account, your library and any scan reports you sent. You can also ask us to delete your data, or to tell you what we hold, by emailing <a href="mailto:contact@crimsonwolf.llc">contact@crimsonwolf.llc</a> from the address on your account.</p>
+    <p>We keep your account data until you delete it.</p>
+    <p>You can delete your account at any time in the app (Profile → Delete account). That permanently removes your account and everything in it: your collection, decks, want list, profile, rewards, trades, AI usage counts, feedback and its screenshots, and scan reports and their photos. Trades you were part of are removed for the other player too.</p>
+    <p>Scan reports and feedback that were already emailed to our team inbox can be deleted on request. You can also ask us to delete your data, or for a copy of what we hold, by emailing <a href="mailto:contact@crimsonwolf.llc">contact@crimsonwolf.llc</a> from the address on your account.</p>
 
     <h2>Children</h2>
     <p>The app isn't directed at children under 13, and we don't knowingly collect personal information from them. If you believe a child under 13 has given us personal information, email us and we'll delete it.</p>
