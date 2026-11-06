@@ -51,7 +51,7 @@ footer.site p { margin: 0 0 .5rem; }
   </header>
 
   <main>
-    <p class="eyebrow">Effective November 6, 2026</p>
+    <p class="eyebrow">Effective November 7, 2026</p>
     <h1>Privacy policy</h1>
     <p class="muted">This policy covers the crimsonwolf.llc website and the PackTutor™ app for iPhone, both run by Crimson Wolf LLC, a Pennsylvania limited liability company.</p>
 
@@ -61,6 +61,7 @@ footer.site p { margin: 0 0 .5rem; }
       <li>We don't track you across other companies' apps or websites.</li>
       <li>Your camera stays on your phone. Nothing is uploaded unless you choose to send a scan report.</li>
       <li>AI features send your cards and decks to a third-party AI service only after you agree on a consent screen.</li>
+      <li>Friends see your name, level and achievements, and only the decks you choose to share. Never your collection.</li>
       <li>You can delete your account from inside the app (Profile → Delete account), and that removes everything stored with it.</li>
     </ul>
 
@@ -78,15 +79,15 @@ footer.site p { margin: 0 0 .5rem; }
     <p>To create an account, you sign in with Apple or with an email address and a passphrase. We store your email address. If you use Sign in with Apple and choose to hide your email, we only get an Apple private relay address, not your real one. Passphrases are handled by our sign-in provider and stored only in hashed form; we can't read them.</p>
 
     <h2>Your profile</h2>
-    <p>You can choose a display name and an avatar. Both are optional. They're stored with Supabase, and the other player sees them when you trade.</p>
+    <p>You can choose a display name and an avatar. Both are optional. They're stored with Supabase. The other player sees them when you trade, and your friends see them on your profile.</p>
 
     <h2>Your collection, decks and progress</h2>
-    <p>When you're signed in, the following sync with our database provider, <a href="https://supabase.com">Supabase</a>, on servers in the United States (US East), so they're on all your devices. Only you can see them.</p>
+    <p>When you're signed in, the following sync with our database provider, <a href="https://supabase.com">Supabase</a>, on servers in the United States (US East), so they're on all your devices. Only you can see them, except the decks you share with your friends (see <a href="#friends">Friends</a>).</p>
     <ul>
       <li>Your collection: cards, quantities, condition, finish, pinned cards, and how each card was added (for example, scanned, or imported along with the name of the app it came from).</li>
-      <li>Your decks: their cards, format, deck box style, and your deck notes (your game journal).</li>
+      <li>Your decks: their cards, format, deck box style, your deck notes (your game journal), who can see each deck (only you, or your friends), whether it's planned or built, and, for a deck you cloned, the display name of the friend it came from.</li>
       <li>Your want list.</li>
-      <li>Your rewards progress, such as achievements and set milestones.</li>
+      <li>Your rewards progress, such as achievements and set milestones, and your total XP.</li>
     </ul>
 
     <h2>Imported files</h2>
@@ -95,6 +96,20 @@ footer.site p { margin: 0 0 .5rem; }
     <h2>Trades</h2>
     <p>When you trade cards with another player, we store the two accounts, the cards each of you offers, and your confirmations with Supabase. Only the two of you can see a trade. The other player sees only your display name, your avatar and the cards in the trade, not the rest of your collection or your email.</p>
     <p>Trade codes work for 24 hours. To stop codes being guessed, if you type a code that matches no trade, we log that attempt against your account and keep it for 7 days.</p>
+
+    <h2 id="friends">Friends</h2>
+    <p>Friends are optional. You get a friend code, and you add a friend by entering theirs. You become friends only when the other player accepts. There's no public list of players: nobody can find you without your code, and you can get a new code at any time.</p>
+    <p>When you're friends, each of you can see the other's:</p>
+    <ul>
+      <li>Display name and avatar.</li>
+      <li>XP, level and rank.</li>
+      <li>Achievements, and the dates they were earned.</li>
+      <li>Decks set to Friends: their name, description, format, deck box style and cards.</li>
+    </ul>
+    <p>Friends never see your collection, your want list, your deck notes, your other decks or your email address. Every deck starts as visible only to you, and you can change who sees it at any time.</p>
+    <p>When you clone a friend's deck, the copy is yours: it's saved with your decks, along with the friend's display name, and later changes to their deck don't change it.</p>
+    <p>We store your friend code, your friends and friend requests, and anyone you block, with Supabase. To stop codes being guessed, if you type a friend code that matches nobody, we log that attempt against your account and keep it for 7 days.</p>
+    <p>You can remove a friend or block a player at any time. Blocking ends the friendship and stops that player sending you requests. You can also report a player or one of their shared decks. A report stores your account, the account and deck you reported, and what you wrote. Reports are kept privately, seen only by us, and never shown to the player you reported.</p>
 
     <h2>Camera and scanning</h2>
     <p>When you scan a card, the camera frames are processed on your phone to read the card. Camera frames and photos are never uploaded, unless you choose to send a scan report.</p>
@@ -146,7 +161,7 @@ footer.site p { margin: 0 0 .5rem; }
 
     <h2>Who handles your data</h2>
     <ul>
-      <li><strong>Supabase</strong>: sign-in, your synced data, trades, scan reports and feedback (United States).</li>
+      <li><strong>Supabase</strong>: sign-in, your synced data, friends, trades, reports, scan reports and feedback (United States).</li>
       <li><strong>Apple</strong>: Sign in with Apple, purchases, TestFlight, and on-device AI.</li>
       <li><strong>Scryfall</strong>: card details, images and prices.</li>
       <li><strong>A third-party AI service</strong>: only for cloud AI features, and only after you agree.</li>
@@ -157,7 +172,7 @@ footer.site p { margin: 0 0 .5rem; }
 
     <h2>Keeping and deleting your data</h2>
     <p>We keep your account data until you delete it.</p>
-    <p>You can delete your account at any time in the app (Profile → Delete account). That permanently removes your account and everything in it: your collection, decks, want list, profile, rewards, trades, AI usage counts, feedback and its screenshots, and scan reports and their photos. Trades you were part of are removed for the other player too.</p>
+    <p>You can delete your account at any time in the app (Profile → Delete account). That permanently removes your account and everything in it: your collection, decks, want list, profile, rewards, friends and friend requests, blocks, reports you sent, trades, AI usage counts, feedback and its screenshots, and scan reports and their photos. Trades you were part of are removed for the other player too, and you disappear from your friends' lists. Decks your friends cloned from you stay with them as their own copies, with your display name as where they came from.</p>
     <p>Scan reports and feedback that were already emailed to our team inbox can be deleted on request. You can also ask us to delete your data, or for a copy of what we hold, by emailing <a href="mailto:contact@crimsonwolf.llc">contact@crimsonwolf.llc</a> from the address on your account.</p>
 
     <h2>Children</h2>
