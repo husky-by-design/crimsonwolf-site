@@ -112,11 +112,17 @@ footer.site p { margin: 0 0 .5rem; }
     <p>You can remove a friend or block a player at any time. Blocking ends the friendship and stops that player sending you requests. You can also report a player or one of their shared decks. A report stores your account, the account and deck you reported, and what you wrote. Reports are kept privately, seen only by us, and never shown to the player you reported.</p>
 
     <h2>Notifications</h2>
-    <p>If you allow notifications, the app tells us your phone's push token, a code from Apple that lets us send a
-    notification to that phone. We store it with Supabase, linked to your account, and use it only to tell you when
-    someone sends you a friend request or accepts yours. The notification shows the other player's display name and
-    is delivered by Apple's push notification service. Signing out removes the token, and you can turn notifications
-    off at any time in your iPhone's Settings.</p>
+    <p>The app keeps a list of your notifications, behind the bell at the top of each screen: friend requests and
+    accepted requests, updates on trades you're in (when the other player joins, confirms, finishes or cancels), and
+    decks a friend shares with you. Each entry stores who it's from, what it's about, when it happened and whether
+    you've read it. Only you can see your list. It's stored with Supabase, linked to your account, and kept until you
+    delete your account.</p>
+    <p>If you allow notifications, the app also tells us your phone's push token, a code from Apple that lets us send a
+    notification to that phone. We store it with Supabase, linked to your account, and use it only to send you the
+    entries above as notifications, except shared decks, which stay in the list. A notification shows the other
+    player's display name and, for a new friend, how many decks they share with friends. It's delivered by Apple's
+    push notification service. Signing out removes the token, and you can turn notifications off at any time in your
+    iPhone's Settings.</p>
 
     <h2>Camera and scanning</h2>
     <p>When you scan a card, the camera frames are processed on your phone to read the card. Camera frames and photos are never uploaded, unless you choose to send a scan report.</p>
@@ -179,7 +185,7 @@ footer.site p { margin: 0 0 .5rem; }
 
     <h2>Keeping and deleting your data</h2>
     <p>We keep your account data until you delete it.</p>
-    <p>You can delete your account at any time in the app (Profile → Delete account). That permanently removes your account and everything in it: your collection, decks, want list, profile, rewards, friends and friend requests, blocks, reports you sent, push tokens, trades, AI usage counts, feedback and its screenshots, and scan reports and their photos. Trades you were part of are removed for the other player too, and you disappear from your friends' lists. Decks your friends cloned from you stay with them as their own copies, with your display name as where they came from.</p>
+    <p>You can delete your account at any time in the app (Profile → Delete account). That permanently removes your account and everything in it: your collection, decks, want list, profile, rewards, friends and friend requests, blocks, reports you sent, push tokens, notifications, trades, AI usage counts, feedback and its screenshots, and scan reports and their photos. Trades you were part of are removed for the other player too, and you disappear from your friends' lists. Decks your friends cloned from you stay with them as their own copies, with your display name as where they came from.</p>
     <p>Scan reports and feedback that were already emailed to our team inbox can be deleted on request. You can also ask us to delete your data, or for a copy of what we hold, by emailing <a href="mailto:contact@crimsonwolf.llc">contact@crimsonwolf.llc</a> from the address on your account.</p>
 
     <h2>Children</h2>
